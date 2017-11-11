@@ -28,7 +28,7 @@ int main()
 	exercise();
 	while (again != 'n')
 	{
-		cout << "Would you like to start again? (y/n) > ";
+		cout << "Do you want to start again? (y/n) > ";
 		cin >> again;
 		switch (again)
 		{
