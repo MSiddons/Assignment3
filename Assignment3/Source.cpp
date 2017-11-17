@@ -6,20 +6,20 @@ using namespace std;
 void exercise()
 {
 	int numIn = 0;
-	while (numIn < 1)
+	while (numIn < 1) //keep asking the user for a integer greater than 0.
 	{
-		cout << "Starting point (integer greater than zero) > ";
+		cout << "Starting point (integer greater than zero) > "; 
 		cin >> numIn;
 	}
-	while (numIn != 1)
+	while (numIn != 1) //while the number is greater than 1...
 	{
-		cout << numIn << " ";
-		if (numIn % 2 == 0)
+		cout << numIn << " "; //print the number generated from the user or the last loop.
+		if (numIn % 2 == 0) //if the number is even, divide it by 2.
 			numIn = numIn / 2;
 		else
-			numIn = numIn * 3 + 1;
+			numIn = numIn * 3 + 1; //otherwise, multiply by 3 and add 1.
 	}
-	cout << "1" << endl << endl;
+	cout << "1" << endl << endl; //if the user enters '1', the answer is 1.
 }
 
 int main()
